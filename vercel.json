@@ -23,13 +23,5 @@
         "src": "/(.*)",
         "dest": "/api/index.js"
       }
-    ],
-    "functions": {
-      "api/index.js": {
-        "maxDuration": 30
-      },
-      "api/socket.js": {
-        "maxDuration": 30
-      }
-    }
+    ]
   }
