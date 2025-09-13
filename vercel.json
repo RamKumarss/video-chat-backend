@@ -1,0 +1,35 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "api/socket.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/health",
+        "dest": "/api/index.js"
+      },
+      {
+        "src": "/api/socket",
+        "dest": "/api/socket.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.js"
+      }
+    ],
+    "functions": {
+      "api/index.js": {
+        "maxDuration": 30
+      },
+      "api/socket.js": {
+        "maxDuration": 30
+      }
+    }
+  }
