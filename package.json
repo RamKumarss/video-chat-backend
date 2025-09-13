@@ -1,20 +1,13 @@
 {
   "name": "video-chat-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node api/index.js",
-    "start": "node api/index.js",
-    "build": "echo 'Build complete'",
-    "vercel-build": "echo 'Vercel build complete'"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "socket.io": "^4.8.1"
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "cors": "^2.8.5"
   }
 }
